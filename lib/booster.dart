@@ -24,6 +24,7 @@ class Booster {
     bool isAlignCenter = true,
     bool isBold = false,
     bool isUnderline = false,
+     TextDirection textDirection = TextDirection.ltr,
     double lineHeight = 1.0,
     double letterSpacing = 0.5,
     String fontFamily = "Poppins",
@@ -33,6 +34,7 @@ class Booster {
     return Text(
       label,
       textAlign: isAlignCenter ? TextAlign.center : TextAlign.start,
+      textDirection: textDirection,
       style: TextStyle(
         letterSpacing: letterSpacing,
         height: lineHeight,
