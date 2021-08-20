@@ -18,7 +18,7 @@ class Booster {
     );
   }
 
-  static dynamicFontSize({
+  static Widget dynamicFontSize({
     required String label,
     required double fontSize,
     bool isAlignCenter = true,
@@ -46,7 +46,7 @@ class Booster {
     );
   }
 
-  static noDataFound(BuildContext context,
+  static Widget noDataFound(BuildContext context,
       {required IconData icon,
       required Color iconColor,
       double iconSize = 65}) {
@@ -75,7 +75,7 @@ class Booster {
     );
   }
 
-  static paddedWidget({
+  static Widget paddedWidget({
     required Widget child,
     double left = 0.0,
     double right = 0.0,
@@ -97,7 +97,7 @@ class Booster {
     return MediaQuery.of(context).size.height;
   }
 
-  static networkProfileAvatar(
+  static Widget networkProfileAvatar(
       {File? image,
       required String networkImage,
       required String placeHolderImage,
@@ -140,7 +140,7 @@ class Booster {
     );
   }
 
-  static localProfileAvatar(
+  static Widget localProfileAvatar(
       {required double radius, required String assetImage}) {
     return Container(
       height: radius,
@@ -155,7 +155,7 @@ class Booster {
     );
   }
 
-  static profileImagePicker(VoidCallback onTap, {required Color color}) {
+  static Widget profileImagePicker(VoidCallback onTap, {required Color color}) {
     return Positioned.fill(
         child: Row(
       mainAxisAlignment: MainAxisAlignment.end,
