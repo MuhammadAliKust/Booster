@@ -26,7 +26,7 @@ class Booster {
     bool isUnderline = false,
     double lineHeight = 1.0,
     double letterSpacing = 0.5,
-    String fontFamily,
+    String fontFamily = "",
     FontWeight fontWeight = FontWeight.bold,
     Color? color,
   }) {
